@@ -1,25 +1,52 @@
+@font-face {
+    font-family: 'Digital-7 Mono';
+    src: url('digital7mono.ttf') format('truetype');
+}
+
+
+body {
+    background-color: #eed8c9;
+}
+
 .calculator {
-   width: 335px;
-   border: 2px solid;
-   padding: 5px;
+    width: 335px;
+    margin: auto;
+    margin-top: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: #e99787;
+    font-family: 'DS-Digital', sans-serif;
+    color: #727077;
+    box-shadow: 0 10px 30px rgba(72, 70, 77, 0.95);
 }
 
 .display {
-    height: 110px;
+    height: 120px;
     margin-bottom: 5px;
-    border: 2px solid;
-    border-width: 3px 7px 10px;
-    border-style: solid;
-    border-color: #eeeeee #e0e0e0 #c2c2c2;
+    border: 5px solid;
+    border-color: #dbbca8;
     border-radius: 7px;
+    background-color: #f4eae4;
+    font-family: 'Digital-7 Mono', monospace;
+    padding: 5px;
 }
 
 .operationDisplay {
-    height: 30px;
+    height: 50px;
+    font-size: 1.7em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
 }
 
 .numberDisplay {
-    height: 80px;
+    height: 70px;
+    font-size: 2.5em;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: pre-wrap;
+    max-width: 100%;
 }
 
 .buttons {
@@ -35,6 +62,39 @@
     height: 80px;
     border-width: 3px 7px 10px;
     border-style: solid;
-    border-color: #eeeeee #e0e0e0 #c2c2c2;
+    border-color: #f4eae4 #dbbca8 #c89e89;
     border-radius: 7px;
+    background-color: #eed8c9;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 32px;
+    font-weight: bold;
+    color: #727077;
+    transition: 0.3s ease;
 }
+
+.btn:active {
+    transform: scale(0.9);
+    background-color: #f4eae4;
+}
+
+.clear,
+.clearAll {
+    background-color: #f4eae4;
+    border-color: #faf4f1 #dbbca8 #c89e89;
+}
+
+.github a {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    font-family: 'Roboto Mono', monospace;
+    color: #727077;
+    text-decoration: none;
+}
+
+.account {
+    color: #e99787;
+}
+
