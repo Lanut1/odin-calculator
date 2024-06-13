@@ -115,6 +115,8 @@ function handleOperator(target, screen, fullOperationScreen) {
             secondNumber = screen.textContent;
             firstNumber = operate(firstNumber, operator, secondNumber);
             secondNumber = '';
+        } else {
+            firstNumber = screen.textContent;
         }
     } else {
         // Case: Starting a new calculation
